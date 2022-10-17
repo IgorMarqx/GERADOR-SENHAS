@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <title>Gerador de senhas</title>
+</head>
+<body>
+    <section class="container">
+        <div class="titulo">
+            <h1>Gerador de senhas</h1>
+        </div>
+
+        <div class="inputs">
+            <label for="">Tamanho <span id="valor"></span> caracteres</label>
+            <input class="slider" id="slider" type="range" min="5" max="25" value="10">
+            <button onclick="geradorSenha()" id="btn" class="btn">Gerar senha</button>
+        </div>
+
+        <div id="container-senha" onclick="copySenha()" class="container-senha hide">
+            <span class="title">Sua senha gerada foi:</span>
+            <span class="senha" id="senha"></span>
+            <span class="tooltip">Clique na senha para copiar! 👆</span>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
